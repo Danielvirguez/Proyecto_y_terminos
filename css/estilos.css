@@ -31,10 +31,10 @@ footer .footer-text{
 footer .footer-text p{
     font-size: 20px;
     text-align: center;
-    color: #fff;
+    color: #000000;
 }
 nav{ 
-    background: black; 
+    background: linear-gradient(to bottom, #decbfa, hwb(0 73% 27%)); 
     float: left; 
     width: 100%; 
     height: 60px; 
@@ -44,7 +44,7 @@ nav{
     margin: 5px; 
    } 
    nav ul li a{ 
-    color: white; 
+    color: rgb(0, 0, 0); 
     font-size: 17px; 
     text-decoration: none; 
     transition: .3s; 
@@ -79,7 +79,7 @@ nav{
              font-size: 0.9em; 
             }
             body{
-                background: rgb(238, 228, 228);
+                background: hwb(0 64% 35%);
                 width: 1000px;
                 margin: 0 auto;
                 } 
@@ -89,7 +89,7 @@ nav{
                    display: flex;
                    justify-content: center;
                    align-items: center;
-                    background: #848487;
+                   background:radial-gradient(200px top, ellipse, rgb(175, 173, 173), #1464af, #ec3e3e);
                     float: left;
                     transition: 3s;
                     margin: 0;
@@ -97,13 +97,13 @@ nav{
                    #titulo{
                     width: 800px;
                     height: 100px;
-                    background: #00446a;
+                    background: linear-gradient(to bottom, #4E2394, #DBC9F5);
                     float: left;
                    }
                    #subtitulo{
                     width: 800px;
                     height: 100px;
-                    background: #8a9597(0 62% 5%);
+                    background: hwb(0 73% 27%);
                     float: left;
                    } 
                    #titulo p{
@@ -113,7 +113,7 @@ nav{
                     font-weight: bold;
                     }
                     #subtitulo p{
-                    font-size: 20px;
+                    font-size: 15px;
                     margin-left: 30px;
                     font-weight: bold;
                     } 
