@@ -85,7 +85,7 @@ nav{
                 } 
                 figure{
                     width: 200px;
-                    height: 200px;
+                    height: 200px;  
                    display: flex;
                    justify-content: center;
                    align-items: center;
@@ -117,4 +117,22 @@ nav{
                     margin-left: 30px;
                     font-weight: bold;
                     } 
+                    figure{
+                        width: 200px;
+                        height: 200px;  
+                       display: flex;
+                       justify-content: center;
+                       align-items: center;
+                       background:radial-gradient(200px top, ellipse, rgb(175, 173, 173), #1464af, #ec3e3e);
                    
+                        transition: 3s;
+                        margin: 0;
+                       }
+                       #titulo2{
+                        width: 800px;
+                        height: 100px;
+                        background: linear-gradient(to bottom, #4E2394, #DBC9F5);
+                        float: left;
+                       }
+                   
+                
