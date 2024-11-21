@@ -1,34 +1,62 @@
+
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <style type="text/css">
-        body {background-color:lightcyan; font-family: sans-serif;}
-        label {color: maroon; display:block; padding:5px;}
-	    input {margin:10px;}
-    </style>
-    <script type="text/javascript" src="js/funciones_validacion.js"></script>    
 
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta name="author" content="Brenda Buitrago y Farid Torres">
+    <meta name="description" content="Pagina WEB de mi glosario personal, correspondiente a la asignatura de Sistemas Operativos, ingeniería de sistemas, UNICOC">
+  
+    <meta name="keywords" content="Glosario, Sistemas Operativos, Microprocesadores, Ingeniería, Sistemas, Unicoc">
+    <title>EJERCICIO VALIDADOR DATOS FORMULARIO</title>
+    <link rel="icon" href="imagenes/icono.png" type="image/png" sizes="20x20"> 
+  
+    <link rel="stylesheet" href="css/estilos.css">
+    <script type="text/javascript" src="js/funciones_validacion.js"></script>    
 
 </head>
 <body>
-    <div class="contact-from">
-        <h1>Contáctanos</h1>
-        <form action="pagina2.html" method="post" on_submit="">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Enviar</button>
-        </form>
+    <img src="imagenes/logoudec_2.png">
+    <nav>
+        <ul>
+             <li><a href="index.html">Inicio</a></li>
+             <li><a href="glosarioingenieria.html">Glosario Ingeniería</a></li>
+             <li><a href="glosarioalgoritmos.html">Glosario Algoritmos</a></li>
+             <li><a href="glosariotgs.html">Glosario TGS</a></li>
+             <li><a href="validacion_formulario.html">Contactenos</a></li>
+        </ul>
+        </nav>
+      
+     
+      <h1>Ingeniería Mecatrónica</h1>
+      <h2>Por:  Brenda Buitrago y Farid Torres </h2>
+      <br><hr><br>
+
+    <h2>Formulario: DATOS PERSONALES</h2><hr><br>
+    <! ----------------------------------------- -->  
+    <form id="miniformulario" name="miniformulario" class="formulario" method="get" onsubmit="return validarDatos()" action="pagina2.html" >
         
-    </div>
+        <label for="nombre">Nombre...</label>   
+        <input type="text" id="nombre" name="nombre" placeholder="ingrese el Nombre..." /><img width="20" height="20"  style='visibility: hidden;' /><br/>
+            
+        <label for="apellido">Apellidos</label>
+        <input type="text" id="apellido" name="apellido" placeholder="ingrese el Apellido..."/><img width="20" height="20"  style='visibility: hidden;' /><br/>
+        
+        
+        
+        
+
+        <hr>       
+           
+        
+        <! -----------------------------------------_ -->  
+        <! --- Botones de comando para el formulario  -->
+        <input type="submit"  value="Enviar..." />
+        
+        <! input type="reset" value="Reiniciar datos" />   
+        <input type="button" value="Reiniciar datos" onclick="resetearDatos()">
+    </form>
 </body>
+    
 </html>
