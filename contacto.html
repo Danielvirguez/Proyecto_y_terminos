@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="styles.css">
+    <style type="text/css">
+        body {background-color:lightcyan; font-family: sans-serif;}
+        label {color: maroon; display:block; padding:5px;}
+	    input {margin:10px;}
+    </style>
+    <script type="text/javascript" src="js/funciones_validacion.js"></script>    
+
+
 </head>
 <body>
     <div class="contact-form">
         <h1>Contáctanos</h1>
-        <form action="submit_form.php" method="post">
+        <form action="pagina2.html" method="post" on_submit="">
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" required>
             
@@ -21,6 +28,7 @@
             
             <button type="submit">Enviar</button>
         </form>
+        
     </div>
 </body>
 </html>
