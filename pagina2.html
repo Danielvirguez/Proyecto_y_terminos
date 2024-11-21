@@ -1,29 +1,62 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head>
-<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>WEB en construcci�n</title></head><body><br>
-<br>
-<table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top;">
-      <div style="text-align: center;"><big style="font-style: italic;"><big><big><big><span style="font-family: Arial Black; color: rgb(51, 51, 255);">... Disc�lpenos ....</span></big></big></big></big><br>
-      <big><big style="font-style: italic;"><span style="color: rgb(204, 102, 204);">
-Este sitio WEB&nbsp; est�&nbsp; en construcci�n</span></big></big><br>
-      </div>
 
-      <br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top; text-align: center;"><img style="width: 332px; height: 310px;" alt="en construcci�n" title="sitio web en construcci�n" src="imagenes/construccion_web.jpg"><br>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<div style="text-align: center;">Pr�ximamente estaremos a su disposici�n....<br>
-gracias por visitarnos<br>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta name="author" content="Brenda Buitrago y Farid Torres">
+    <meta name="description" content="Pagina WEB de mi glosario personal, correspondiente a la asignatura de Sistemas Operativos, ingeniería de sistemas, UNICOC">
+  
+    <meta name="keywords" content="Glosario, Sistemas Operativos, Microprocesadores, Ingeniería, Sistemas, Unicoc">
+    <title>EJERCICIO VALIDADOR DATOS FORMULARIO</title>
+    <link rel="icon" href="imagenes/icono.png" type="image/png" sizes="20x20"> 
+  
+    <link rel="stylesheet" href="css/estilos.css">
+    <script type="text/javascript" src="js/funciones_validacion.js"></script>    
 
+</head>
+<body>
+    <img src="imagenes/logoudec_2.png">
+    <nav>
+        <ul>
+             <li><a href="index.html">Inicio</a></li>
+             <li><a href="glosarioingenieria.html">Glosario Ingeniería</a></li>
+             <li><a href="glosarioalgoritmos.html">Glosario Algoritmos</a></li>
+             <li><a href="glosariotgs.html">Glosario TGS</a></li>
+             <li><a href="validacion_formulario.html">Contactenos</a></li>
+        </ul>
+        </nav>
+      
+     
+      <h1>Ingeniería Mecatrónica</h1>
+      <h2>Por:  Brenda Buitrago y Farid Torres </h2>
+      <br><hr><br>
 
-</div>
-</body></html>
+    <h2>Formulario: DATOS PERSONALES</h2><hr><br>
+    <! ----------------------------------------- -->  
+    <form id="miniformulario" name="miniformulario" class="formulario" method="get" onsubmit="return validarDatos()" action="pagina2.html" >
+        
+        <label for="nombre">Nombre...</label>   
+        <input type="text" id="nombre" name="nombre" placeholder="ingrese el Nombre..." /><img width="20" height="20"  style='visibility: hidden;' /><br/>
+            
+        <label for="apellido">Apellidos</label>
+        <input type="text" id="apellido" name="apellido" placeholder="ingrese el Apellido..."/><img width="20" height="20"  style='visibility: hidden;' /><br/>
+        
+        
+        
+        
+
+        <hr>       
+           
+        
+        <! -----------------------------------------_ -->  
+        <! --- Botones de comando para el formulario  -->
+        <input type="submit"  value="Enviar..." />
+        
+        <! input type="reset" value="Reiniciar datos" />   
+        <input type="button" value="Reiniciar datos" onclick="resetearDatos()">
+    </form>
+</body>
+    
+</html>
